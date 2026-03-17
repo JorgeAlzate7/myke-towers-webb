@@ -5,50 +5,73 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body style="background-color: rgb(207, 207, 207);">
+<body>
     
 
-    <h2>Formulario de registro</h2>
+    <h2 style="color: rgb(161, 137, 0);">Formulario de registro</h2>
 
 <form action="procesar.php" method="get">
 
-<label for="Nombre">Nombre:</label>
-<input type="text" id="Nombre" name="Nombre" autocomplete="on">
+    <label for="Nombre">Nombre:</label>
+    <input type="text" id="Nombre" name="Nombre" autocomplete="on">
+    <br><br>
+    <label for="Correo">Correo:</label>
+    <input type="text" id="Correo" name="Correo" autocomplete="on">
+    <br><br>
+    <label for="Edad">Edad:</label>
+    <input type="number" id="Edad" name="Edad">
+    <br><br>
+    <label>Género:</label>
+    <input type="radio" name="Genero" value="Masculino"> Masculino
+    <input type="radio" name="Genero" value="Femenino"> Femenino
 
 <br><br>
 
-<label for="Correo">Correo:</label>
-<input type="text" id="Correo" name="Correo" autocomplete="on">
 
-<br><br>
+    <label for="Pais">Pais :</label>
+    <select id="Pais" name="Musica">
+    <option>Colombia</option>
+    <option>Puerto Rico</option>
+    <option>Chile</option>
+    <option>otro</option>
 
-<label for="Edad">Edad:</label>
-<input type="number" id="Edad" name="Edad">
-
-<br><br>
-
-<label>Género:</label>
-<input type="radio" name="Genero" value="Masculino"> Masculino
-<input type="radio" name="Genero" value="Femenino"> Femenino
-
-<br><br>
-
-<label for="Musica">Preferencia musical:</label>
-<select id="Musica" name="Musica">
-<option>Reguetón</option>
-<option>Trap</option>
-<option>Rap</option>
 </select>
 
 <br><br>
+    <label for="Preferencia">preferencia musical</label>
+    <br>
+    <input type="checkbox">Trap <br>
+    <input type="checkbox">Reggaeton <br>
+    <input type="checkbox">freestyle <br>
+    <input type="checkbox">Motivacional<br>
+    <br><br>
+    <label for="Comentario">Comentario:</label><br>
+    <textarea id="Comentario" name="Comentario" rows="4" cols="30"></textarea>
+<br><br>
 
-<label for="Comentario">Comentario:</label><br>
-<textarea id="Comentario" name="Comentario" rows="4" cols="30"></textarea>
+<button type="submit">Enviar</button>
+
+
+</form>
 
 <br><br>
 
-<input type="submit" value="Enviar">
+<h2>formulario de inicio de sesion</h3>
 
+<br>
+
+<form action="procesar.php" method="post">
+
+    <label for="Nombre">Nombre</label>
+    <input type="text" id="Nombre" name="Nombre">
+    <br><br>
+    <label for="Correo">Correo</label>
+    <input type="email" name="Correo" id="Correo">
+    <br><br>
+    <label for="Contraeña">Contraseña</label>
+    <input type="password" name="" id="">
+    <br><br>
+    <button type="submit">Enviar</button>
 </form>
 
 </body>
